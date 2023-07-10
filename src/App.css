@@ -1,38 +1,239 @@
 .App {
   text-align: center;
+  height:100%
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100%;
+  margin:0;
+
+}
+html{
+  height: 100%;
+  margin: 0;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.adminLogin{
+  margin-top: 7%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container{
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  width: 40%;
+  margin-left: 28%;
+  height: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.emailAdminLogin{
+  width: 50%;
+  margin-top: 1%;
+  height: 30px;
+}
+
+.passwordAdminLogin{
+  width: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 30px;
+}
+
+.buttonAdminLogin{
+  width: 51.5%;
+  height: 40px;
+  background-color: #FCAF45;
   color: white;
+  margin-top: 1%;
+}
+.buttonAdminLogin:hover{
+  background-color:#F77737;
 }
 
-.App-link {
-  color: #61dafb;
+#profile-img{
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finalniPodatak {
+  font-weight: bold;
+}
+
+.vrednostFinalnogPodatka {
+  font-weight: 100;
+}
+
+.userInfo{
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: 60%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+}
+
+.labelUsername{
+  margin-left: 35%;
+  font-size: 2.5em; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+  margin-top: 13%;
+}
+
+.imgUser{
+  border-radius: 50%;
+}
+
+.labelFollowers{
+  margin-left: 4%;
+  font-size: 2.5em; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+}
+
+.labelFollowing{
+  margin-left: 4%;
+  font-size: 2.5em; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+}
+
+.labelFollowerCount, .labelFollowingCount{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid purple; */
+  margin-left: 35%;
+  margin-top: 20%;
+}
+
+.divFollowCount{
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+}
+
+.usernameAndFollowers{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.tab-header{
+/* border:  5px solid purple; */
+margin-left: 20%;
+margin-top: 2%;
+margin-bottom: 1%;
+height: 50px;
+width: 60%;
+}
+
+/* .btnUnfollowers{
+height: 100%;
+background-color: #FCAF45;
+
+}
+
+.btnNonUnfollowers{
+  height: 100%;
+  background-color: #FCAF45;
+
+} */
+
+.btnUnfollowers, .btnNonUnfollowers, .btnTopLikers {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btnUnfollowers:focus, .btnNonUnfollowers:focus, .btnTopLikers:focus {
+  outline: none;
+}
+
+.btnLogoout{
+  padding: 10px 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  float: right;
+}
+
+.nonFollowersCount{
+  font-size: 1.4em; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+  margin-left: 15%;
+}
+
+.statisticTable{
+/* border: 2px solid red; */
+width: 100%;
+height: 100%;
+margin-left: 20%;
+margin-right: 10%;
+width: 60%;
+/* border: 5px solid red; */
+}
+
+th{
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
+
+td{
+  text-align: center;
+  /* border:  3px solid blue; */
+  border-bottom: 1px solid #ddd;
+}
+
+tr{
+  border:  3px solid green;
+
+}
+/* thead{
+  border: 2px solid green;
+  width: 100%;
+  height: 100%;
+}
+
+tr{
+  border: 2px solid orange;
+  width: 100%;
+  height: 100%;
+}
+
+td{
+  width: 200px;
+  height: 200px;
+}
+
+tbody{
+  border: 2px solid purple;
+  width: 100%;
+  height: 100%;
+} */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
